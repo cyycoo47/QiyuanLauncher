@@ -1,0 +1,3 @@
+-keep class com.changan.sda.opensdk.** { *; }
+-dontwarn com.changan.sda.opensdk.**
+-keep class com.qiyuan.launcher.** { *; }

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 主色调：青蓝色 -->
+    <color name="qy_primary">#00BCD4</color>
+    <color name="qy_primary_dark">#0097A7</color>
+    <color name="qy_primary_light">#4DD0E1</color>
+
+    <!-- 背景色 -->
+    <color name="qy_background">#0D1117</color>
+    <color name="qy_surface">#161B22</color>
+    <color name="qy_card">#1E2530</color>
+    <color name="qy_card_elevated">#252D3A</color>
+
+    <!-- 文字色 -->
+    <color name="qy_text_primary">#FFFFFF</color>
+    <color name="qy_text_secondary">#B0BEC5</color>
+    <color name="qy_text_hint">#607D8B</color>
+
+    <!-- 强调色 -->
+    <color name="qy_accent">#FF9800</color>
+    <color name="qy_warning">#FFC107</color>
+    <color name="qy_error">#F44336</color>
+    <color name="qy_success">#4CAF50</color>
+
+    <!-- 导航栏 -->
+    <color name="qy_nav_bar">#111820</color>
+    <color name="qy_nav_item_selected">#00BCD4</color>
+    <color name="qy_nav_item_unselected">#546E7A</color>
+
+    <!-- 状态栏 -->
+    <color name="qy_status_bar">#0A0F14</color>
+
+    <!-- 分割线 -->
+    <color name="qy_divider">#263238</color>
+
+    <!-- 图标背景 -->
+    <color name="qy_icon_bg">#1A2230</color>
+</resources>

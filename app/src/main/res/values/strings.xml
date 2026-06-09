@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">启源车机桌面</string>
+    <string name="nav_home">桌面</string>
+    <string name="nav_apps">应用</string>
+    <string name="nav_dashboard">仪表盘</string>
+    <string name="nav_hvac">空调</string>
+    <string name="nav_vehicle">车控</string>
+    <string name="nav_tyre">胎压</string>
+    <string name="nav_settings">设置</string>
+    <string name="sdk_init_success">SDK 初始化成功</string>
+    <string name="sdk_init_failed">SDK 初始化失败，请检查车机系统</string>
+    <string name="sdk_connecting">正在连接车机...</string>
+    <string name="data_loading">数据获取中...</string>
+    <string name="operation_failed">操作失败，请重试</string>
+    <string name="permission_missing">缺少必要权限，部分功能不可用</string>
+    <string name="unit_speed">km/h</string>
+    <string name="unit_km">km</string>
+    <string name="unit_celsius">°C</string>
+    <string name="unit_kpa">kPa</string>
+    <string name="gear_p">P</string>
+    <string name="gear_r">R</string>
+    <string name="gear_n">N</string>
+    <string name="gear_d">D</string>
+    <string name="vehicle_ready">READY</string>
+    <string name="vehicle_charging">充电中</string>
+    <string name="low_battery_warning">电量不足，请尽快充电</string>
+    <string name="tyre_warn_front_left">左前轮异常</string>
+    <string name="tyre_warn_front_right">右前轮异常</string>
+    <string name="tyre_warn_rear_left">左后轮异常</string>
+    <string name="tyre_warn_rear_right">右后轮异常</string>
+    <string name="hvac_on">空调已开启</string>
+    <string name="hvac_off">空调已关闭</string>
+    <string name="auto_mode">自动</string>
+    <string name="about_version">版本</string>
+    <string name="about_sdk_version">SDK版本</string>
+</resources>

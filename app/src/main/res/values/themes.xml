@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.QiyuanLauncher" parent="android:Theme.Material.NoTitleBar.Fullscreen">
+        <item name="android:windowBackground">@color/qy_background</item>
+        <item name="android:statusBarColor">@color/qy_status_bar</item>
+        <item name="android:navigationBarColor">@color/qy_nav_bar</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:colorPrimary">@color/qy_primary</item>
+        <item name="android:colorAccent">@color/qy_accent</item>
+        <item name="android:textColorPrimary">@color/qy_text_primary</item>
+        <item name="android:textColorSecondary">@color/qy_text_secondary</item>
+    </style>
+</resources>
