@@ -8,6 +8,9 @@ on:
   # 允许手动触发
   workflow_dispatch:
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
   build:
     name: Build Debug APK
@@ -52,14 +55,19 @@ jobs:
 
       # 5. 构建 Debug APK
       - name: Build Debug APK
-        run: ./gradlew assembleDebug --no-daemon --stacktrace --info 2>&1 | tail -200
+        run: ./gradlew assembleDebug --no-daemon --stacktrace
 
-      # 6. 上传 APK 到 Artifacts（每次构建可在 Actions 页下载）
+      # 6. 列出生成的 APK（用于调试确认路径）
+      - name: List generated APKs
+        run: find app/build/outputs/apk -name "*.apk" | sort
+
+      # 7. 上传 APK 到 Artifacts（每次构建可在 Actions 页下载）
       - name: Upload Debug APK
         uses: actions/upload-artifact@v4
         with:
           name: QiyuanLauncher-debug-${{ github.run_number }}
           path: app/build/outputs/apk/debug/*.apk
+          if-no-files-found: error
           retention-days: 30
 
   # ── 可选：打 Tag 时自动发布 Release ───────────────────────────────────────────
@@ -103,7 +111,7 @@ jobs:
           echo "${GRADLE_HOME}/bin" >> $GITHUB_PATH
 
       - name: Build Release APK
-        run: ./gradlew assembleRelease --no-daemon --stacktrace --info 2>&1 | tail -200
+        run: ./gradlew assembleRelease --no-daemon --stacktrace
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
