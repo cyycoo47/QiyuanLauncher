@@ -282,8 +282,8 @@ private fun LightStatusCard(
         ) {
             Text("灯光状态", color = QYTheme.TextHint, fontSize = 13.sp)
             LightRow("大灯", Icons.Default.LightMode, headlightOn)
-            LightRow("前雾灯", Icons.Default.FoggyNight, fogLightFront)
-            LightRow("后雾灯", Icons.Default.WbTwilight, fogLightRear)
+            LightRow("前雾灯", Icons.Default.WbCloudy, fogLightFront)
+            LightRow("后雾灯", Icons.Default.LightMode, fogLightRear)
         }
     }
 }
