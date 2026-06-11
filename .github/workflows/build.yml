@@ -52,7 +52,7 @@ jobs:
 
       # 5. 构建 Debug APK
       - name: Build Debug APK
-        run: ./gradlew assembleDebug --no-daemon --stacktrace
+        run: ./gradlew assembleDebug --no-daemon --stacktrace --info 2>&1 | tail -200
 
       # 6. 上传 APK 到 Artifacts（每次构建可在 Actions 页下载）
       - name: Upload Debug APK
@@ -103,7 +103,7 @@ jobs:
           echo "${GRADLE_HOME}/bin" >> $GITHUB_PATH
 
       - name: Build Release APK
-        run: ./gradlew assembleRelease --no-daemon --stacktrace
+        run: ./gradlew assembleRelease --no-daemon --stacktrace --info 2>&1 | tail -200
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
